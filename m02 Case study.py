@@ -8,14 +8,12 @@ gpa = 0
 
 
 while last_name != "ZZZ":
-    last_name = input ("Enter your Last name: ")
+    last_name = input ("Enter the student's last name: ")
     if last_name == "ZZZ":
         break
-    first_name = input ("Enter your First name: ")
+    first_name = input ("Enter the student's first name: ")
     gpa = float(input("Enter your GPA:"))
-    if gpa > 3.5:
+    if gpa >= 3.5:
         print (first_name, last_name, "with GPA of", gpa, "has made the Dean's List")
-    if gpa > 3.25:
-        print (first_name, last_name, "with GPA of", gpa, "has made the honor roll")
-
-
+    if gpa >= 3.25:
+        print (first_name, last_name, "with GPA of", gpa, "has made the Honor Roll")
